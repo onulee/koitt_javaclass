@@ -71,7 +71,23 @@ public class Ex0924_04 {
 			} else {
 				arr2[loca_x][loca_y] = "²Î";
 			}
+			
+			break;
+		}//while
+		
+		
+		//Á¤´äÃâ·Â
+		for (int i = 0; i < arr1.length; i++) {
+			for (int j = 0; j < arr1[i].length; j++) {
+				if (arr1[i][j] == 1) {
+					arr2[i][j] = "º¸¹°";
+				} else {
+					arr2[i][j] = "²Î";
+				}
+			}
 		}
+		
+		
 
 	}
 
