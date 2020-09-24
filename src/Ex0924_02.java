@@ -19,6 +19,7 @@ public class Ex0924_02 {
 			System.out.print(score[i]+"\t");
 		}
 
+		
 	}
 
 }
