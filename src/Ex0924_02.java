@@ -17,6 +17,7 @@ public class Ex0924_02 {
 		System.out.print(name+"\t");
 		for(int i=0;i<score.length;i++) {
 			System.out.print(score[i]+"\t");
+			
 		}
 
 		

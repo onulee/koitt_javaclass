@@ -17,6 +17,7 @@ public class Ex0924_01 {
 		int[] save_num = new int[10];
 		int i=0;
 		
+		
 		while(true) {
 			// 숫자입력
 			System.out.println("숫자를 입력하세요(종료:0)>>");
