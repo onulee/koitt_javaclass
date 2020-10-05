@@ -1,11 +1,11 @@
 
 public class Student {
+
 	int number;
 	String name;
-	int kor_score;
-	int eng_score;
-	int math_score;
-	int total;
+	int kor;
+	int eng;
 	double avg;
-	int rank;
+	int total;
+	
 }
