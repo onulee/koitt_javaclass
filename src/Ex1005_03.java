@@ -10,12 +10,12 @@ public class Ex1005_03 {
 		
 		for(int i = 0;i<card.length;i++) {
 			card[i] = new Card();
-			card[i].number = c[(i%13)];  
-			
-			if(i<((i/13)+i+1)) {
-				card[i].kind = k[(i/13)];
-			}
-		    System.out.printf("카드번호 : %s\t 카드종류 : %s \n",card[i].number,card[i].kind);
+//			card[i].number = c[(i%13)];  
+//			
+//			if(i<((i/13)+i+1)) {
+//				card[i].kind = k[(i/13)];
+//			}
+//		    System.out.printf("카드번호 : %s\t 카드종류 : %s \n",card[i].number,card[i].kind);
 		}
 		
 
