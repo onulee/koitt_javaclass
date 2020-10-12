@@ -14,12 +14,16 @@ public class Card {
 	String number;
 	
 	Card(){
-		this(SPADE,7);
+		this(SPADE,1);
 	}
 	
 	Card(int kind,int number){
 		this.kind = kinds[kind];
 		this.number = numbers[number];
+	}
+	
+	public String toString() {
+		return this.kind+this.number;
 	}
 
 }
