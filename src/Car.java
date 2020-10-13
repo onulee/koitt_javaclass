@@ -1,24 +1,13 @@
 
 public class Car {
-	
-	Car(){ 
-		this("흰색","오토",4);
-	};
-	
-	Car(String c,String gearType,int door){
-		this.color=color;
-		this.gearType = gearType;
-		this.door = door;
-	}
-	
-	Car(Car i){
-		this(i.color,i.gearType,i.door);
-	}
-	
 	String color;
-	String gearType;
 	int door;
 	
-	
+	void drive() {
+		System.out.println("자동차 출발");
+	}
+	void stop() {
+		System.out.println("자동차 멈춤");
+	}
 
 }
