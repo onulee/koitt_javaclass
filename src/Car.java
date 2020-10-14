@@ -1,13 +1,21 @@
 
 public class Car {
-	String color;
-	int door;
+	String pro_name="Car";
 	
-	void drive() {
-		System.out.println("자동차 출발");
+	
+	public String getPro_name() {
+		return pro_name;
 	}
-	void stop() {
-		System.out.println("자동차 멈춤");
+
+	public void setPro_name(String pro_name) {
+		this.pro_name = pro_name;
 	}
+
+
+
+	void move() {
+		
+		System.out.println("출발!!");
+	};
 
 }

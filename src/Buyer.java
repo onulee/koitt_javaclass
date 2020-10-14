@@ -1,62 +1,57 @@
 import java.util.ArrayList;
 
 public class Buyer {
-	//변수선언
-	int money = 1000;
-	int bonusPoint=0;
-	int count=0;
-	// Product[] cart = new Product[10];  //computer,Tv,audio
-	ArrayList list = new ArrayList();
-
 	
-	//메소드선언
-	void setMoney(int money) {
-		this.money += money;
-	}
+	int sum=0;
+	private int money=1000;
+	private int bonusPoint=0;
+	ArrayList<Product> list = new ArrayList<Product>();
 	
-	int getMoney() {
-		return money;
-	}
+	Buyer(){};
 	
-	void summary() { //computer,Tv,audio
-		int sum=0;
+	void summary() {
 		if(list.isEmpty()) {
-			System.out.println("구매상품이 없습니다.");
+			System.out.println("구매목록이 없습니다.!!");
 			return;
 		}
-		System.out.print("총구매목록 : ");
+		System.out.println("[ 총구매목록 ]");
 		for(int i=0;i<list.size();i++) {
-			Product p2 = (Product)list.get(i);
-			System.out.print(p2.p_name+"\t");
-			sum += p2.price;
+			Product p2 =(Product) list.get(i);
+			System.out.println(p2.getPro_name());
 		}
-		System.out.println();
-		System.out.printf("총구매 금액 : %d \n",sum);
-		
 	}
 	
-	
-	void buy(Product p) {  //200,20
-		
-		if(money<p.price) {
-			System.out.println("잔액이 부족합니다. 상품을 구매할 수 없습니다.");
+	void Buy(Product p){
+		if(money<p.getPrice()) {
+			System.out.println("잔액이 부족합니다. 충전을 해주세요.!");
 			return;
 		}
 		
-		money -= p.price;
-		bonusPoint += p.bonusPoint;
-		if(p instanceof Computer) {
-			System.out.println("컴퓨터 1대를 구매했습니다.");
-		}else if(p instanceof Tv) {
-			System.out.println("TV 1대를 구매했습니다.");
-		}else if(p instanceof Audio) {
-			System.out.println("Audio 1대를 구매했습니다.");
-		}
-//		cart[count++] = p;
-		
+		money -= p.getPrice(); 
+		bonusPoint += p.getBonusPoint();
+		System.out.println(p.getPro_name()+"1대를 구매했습니다.");
 		list.add(p);
 		
+		
 	}
+
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money += money; //현재돈에서 추가해야 함.
+	}
+
+	public int getBonusPoint() {
+		return bonusPoint;
+	}
+
+	public void setBonusPoint(int bonusPoint) {
+		this.bonusPoint += bonusPoint;
+	};
+	
+	
 	
 
 }

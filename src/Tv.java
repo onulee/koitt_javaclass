@@ -1,10 +1,11 @@
 
-public class Tv extends Product {
-    
+public class Tv extends Product{
+	
 	Tv(){
-		p_name="TV";
-    	price=150;
-    	bonusPoint = (int)(price/10);
-    }
-    
+		super("TV",150);
+//		setPro_name("TV");
+//		setPrice(150);
+//		setBonusPoint((int)(getPrice()/10));
+	}
+	
 }
