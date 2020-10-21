@@ -2,6 +2,11 @@
 public class Ex1014_01 {
 
 	public static void main(String[] args) {
+		System.out.println("로그인하시겠습니까?");
+		System.out.println("아이디를 입력하세요.>>");
+		System.out.println("패스워드를 입력하세요.>>");
+		System.out.println("홍길동님 환영합니다.");
+		
 		System.out.println("[ 하이마트 쇼핑몰 ]");
 		System.out.println("1.컴퓨터");
 		System.out.println("2.TV");
